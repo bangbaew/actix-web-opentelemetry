@@ -24,7 +24,7 @@ futures-util = { version = "0.3.28", default-features = false, features = ["allo
 opentelemetry = { version = "0.19", default-features = false, features = ["trace", "rt-tokio-current-thread"] }
 opentelemetry-prometheus = { version = "0.12", optional = true }
 opentelemetry-semantic-conventions = "0.11"
-prometheus = { version = "0.13.3", default-features = false, optional = true }
+prometheus = { version = "0.13.3", features = ["process"], optional = true }
 serde = "1.0.159"
 
 [dev-dependencies]
